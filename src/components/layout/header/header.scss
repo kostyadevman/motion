@@ -1,0 +1,13 @@
+.header {
+  background-color: $base-white;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo svg path {
+  fill: $base-black;
+}

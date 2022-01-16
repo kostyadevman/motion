@@ -9,6 +9,7 @@ import {AppRoute} from '../../const';
 import montserratRegular from "../../fonts/montserrat-v21-latin-regular.woff2";
 import montserratNormal from "../../fonts/montserrat-v21-latin-500.woff2";
 import montserratBold from "../../fonts/montserrat-v21-latin-700.woff2";
+import Contacts from "../pages/contacts/contacts";
 
 const App = () => {
   return (
@@ -21,7 +22,14 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path={AppRoute.ROOT}>
-          <Main />
+          <Main>
+            <span>ГЛАВНАЯ СТРАНИЦА СКОРЕЕ ВСЕГО "ОБ АКАДЕМИИ"</span>
+          </Main>
+        </Route>
+        <Route exact path={AppRoute.CONTACTS}>
+          <Main>
+            <Contacts />
+          </Main>
         </Route>
         <Route>
           <PageNotFound />

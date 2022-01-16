@@ -1,0 +1,26 @@
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--footer {
+    flex-direction: column;
+    font-family: $base-f;
+    font-size: 14px;
+    line-height: 34px;
+  }
+}
+
+.menu__item {
+  margin: 0 41px 0 0;
+}
+
+.menu__link {
+  &--footer {
+    color: $base-white;
+  }
+}
